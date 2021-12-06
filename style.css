@@ -1,13 +1,19 @@
+:root {
+	--hero-bg: url("");
+}
+
 body {
-  padding-top: 56px;
+	padding-top: 56px;
 }
 
 .hero {
-  min-height: 95vh;
-  max-height: 810px;
+	min-height: 95vh;
+	max-height: 810px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--hero-bg) no-repeat center center fixed;
+	background-size: cover;
 }
 
 #hero-home {
-  background: url(img/3.jpg) no-repeat center center fixed;
-  background-size: cover;
+	--hero-bg: url("img/3.jpg");
+	/* --hero-bg: url("https://static2-viaggi.corriereobjects.it/wp-content/uploads/2019/11/1-1.jpg?v=353239") */
 }

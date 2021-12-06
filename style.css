@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
 	--hero-bg: url("");
 	--primary: #bd6400;
@@ -12,11 +14,23 @@
 	--gray: #495c63;
 	--light: #fafdff;
 }
-
+/* typography */
 body {
-	padding-top: 56px;
+	font-family: "Montserrat", sans-serif;
 }
-
+h1,
+h2,
+h3 {
+	font-family: "Comfortaa", cursive;
+}
+h1,
+h2 {
+	letter-spacing: -0.02rem;
+}
+h3 {
+	letter-spacing: -0.01rem;
+}
+/* overwriting background colors */
 .bg-primary {
 	background-color: var(--primary) !important;
 }
@@ -30,39 +44,99 @@ body {
 	background-color: var(--light) !important;
 }
 
-@media (min-width: 992px) {
-	.navbar-expand-lg .offcanvas {
-		background-color: transparent !important;
-	}
-}
-.navbar-dark .navbar-nav .nav-link,
-footer .nav-link {
-	color: var(--light);
-}
-
-.btn-primary,
-.btn-primary:focus {
-	background-color: var(--primary);
-	border-color: var(--primary);
-}
-
-.btn-primary:hover {
-	background-color: var(--primary-variant1);
-	border-color: var(--primary-variant1);
-}
-
+/* overwriting border colors */
 .border-primary {
 	border-color: var(--primary) !important;
 }
 
+/* overwriting text and link colors */
+.text-light,
+.link-light {
+	color: var(--light) !important;
+}
+.text-dark,
+.link-dark {
+	color: var(--dark) !important;
+}
+.text-primary,
+.link-primary {
+	color: var(--primary) !important;
+}
+.text-secondary,
+.link-secondary {
+	color: var(--secondary) !important;
+}
+
+/* Overwriting buttons */
+.btn-primary {
+	background-color: var(--primary);
+	border-color: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: var(--primary-variant1);
+	border-color: var(--primary-variant1);
+}
+
+/* Overwriting navbar background color when on lg screen */
+@media (min-width: 992px) {
+	.display-1 {
+		font-size: calc(1.625rem + 10vw);
+	}
+	.navbar-expand-lg .offcanvas {
+		background-color: transparent !important;
+	}
+}
+
+/* Overwriting nav-link color */
+.nav-link,
+.nav-link:visited,
+.navbar-dark .navbar-nav .nav-link {
+	color: var(--light);
+}
+.navbar-dark .navbar-nav .nav-link {
+	letter-spacing: 0.03rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: var(--primary);
+}
+.navbar-dark .navbar-nav .nav-link.active {
+	color: var(--primary-variant1);
+}
+
+/* Hero images */
 .hero {
-	margin: -65px;
-	min-height: 95vh;
+	min-height: 100vh;
 	max-height: 810px;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--hero-bg) no-repeat center center fixed;
 	background-size: cover;
 }
-
 #hero-home {
+	--hero-bg: url("img/3.jpg");
+}
+#hero-descrizione {
+	--hero-bg: url("img/3.jpg");
+}
+#hero-quartieri {
+	--hero-bg: url("img/3.jpg");
+}
+#hero-servizi {
+	--hero-bg: url("img/3.jpg");
+}
+#hero-istruzione {
+	--hero-bg: url("img/3.jpg");
+}
+#hero-benessere {
+	--hero-bg: url("img/3.jpg");
+}
+#hero-eventi {
+	--hero-bg: url("img/3.jpg");
+}
+#hero-unisciti {
 	--hero-bg: url("img/3.jpg");
 }

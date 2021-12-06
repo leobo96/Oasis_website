@@ -87,6 +87,9 @@ h3 {
 	.navbar-expand-lg .offcanvas {
 		background-color: transparent !important;
 	}
+	.navbar-expand-lg .offcanvas.scrolled {
+		background-color: var(--dark) !important;
+	}
 }
 
 /* Overwriting nav-link color */

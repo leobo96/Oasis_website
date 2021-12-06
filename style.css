@@ -1,0 +1,13 @@
+body {
+  padding-top: 56px;
+}
+
+.hero {
+  min-height: 95vh;
+  max-height: 810px;
+}
+
+#hero-home {
+  background: url(img/3.jpg) no-repeat center center fixed;
+  background-size: cover;
+}

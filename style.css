@@ -30,6 +30,12 @@ h2 {
 h3 {
   letter-spacing: -0.01rem;
 }
+@media (min-width: 992px) {
+  .display-1 {
+    font-size: calc(1.625rem + 10vw);
+  }
+}
+
 /* overwriting background colors */
 .bg-primary {
   background-color: var(--primary) !important;
@@ -79,36 +85,6 @@ h3 {
   border-color: var(--primary-variant1);
 }
 
-/* Overwriting navbar background color when on lg screen */
-@media (min-width: 992px) {
-  .display-1 {
-    font-size: calc(1.625rem + 10vw);
-  }
-  .navbar-expand-lg .offcanvas {
-    background-color: transparent !important;
-  }
-}
-
-/* Overwriting nav-link color */
-.nav-link,
-.nav-link:visited,
-.navbar-dark .navbar-nav .nav-link {
-  color: var(--light);
-}
-.navbar-dark .navbar-nav .nav-link {
-  letter-spacing: 0.03rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: var(--primary);
-}
-.navbar-dark .navbar-nav .nav-link.active {
-  color: var(--primary-variant1);
-}
-
 /* logo  */
 .logo {
   fill: var(--light);
@@ -116,17 +92,55 @@ h3 {
 .logo-stroke {
   stroke: var(--light);
 }
-
-/* classes for solid navbar */
-.logo.dark {
+.logo.solid {
   fill: var(--dark);
 }
-.logo-stroke.dark {
+.logo-stroke.solid {
   stroke: var(--dark);
 }
-.navbar-dark .navbar-nav .nav-link.dark {
-  color: var(--dark);
-  filter: none;
+
+/* Overwriting navbar background color when on lg screen */
+@media (min-width: 992px) {
+  .navbar-expand-lg .offcanvas {
+    background-color: transparent !important;
+  }
+}
+
+/* Overwriting navbar nav-link style */
+.navbar-dark .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link {
+  letter-spacing: 0.03rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* Overwriting nav-link colors */
+.nav-link,
+.nav-link:visited,
+.navbar-dark .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link {
+  color: var(--light);
+}
+@media (min-width: 992px) {
+  .navbar-light .navbar-nav .nav-link.solid {
+    color: var(--dark);
+    filter: none;
+  }
+}
+.nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--primary);
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary-variant1);
+}
+/* Overwriting dropdown */
+.dropdown-item.active {
+  color: var(--primary-variant1);
+  background-color: white;
 }
 /* Hero images */
 .hero {

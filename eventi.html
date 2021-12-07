@@ -27,7 +27,7 @@
     >
       <div class="container-fluid">
         <!-- Logo -->
-        <a href="index.html" class="mx-3 navbar_brand">
+        <a href="" class="mx-3 navbar_brand">
           <svg
             width="32"
             height="32"
@@ -126,7 +126,7 @@
                 </ul>
               </li>
               <li class="nav-item mx-lg-3">
-                <a href="eventi.html" class="nav-link">Eventi</a>
+                <a href="eventi.html" class="nav-link active">Eventi</a>
               </li>
               <li class="nav-item mx-lg-3">
                 <a href="unisciti.html" class="nav-link">Unisciti a noi</a>
@@ -216,37 +216,27 @@
     ></script>
     <script>
       let navbar = document.querySelector("header");
-      let text = document.querySelectorAll(".navbar-nav .nav-link");
+      let text = document.querySelectorAll(
+        ".navbar-dark .navbar-nav .nav-link"
+      );
       let logoStroke = document.querySelector(".logo-stroke");
       let logo = document.querySelectorAll(".logo");
 
       window.addEventListener("scroll", (e) => {
         e.preventDefault();
 
-        let media = window.matchMedia("(min-width: 992px)");
-
         if (window.scrollY >= 100) {
-          navbar.classList.add("navbar-light");
-          navbar.classList.remove("navbar-dark");
-
           navbar.classList.remove("bg-transparent");
           navbar.classList.add("bg-light");
-
-          logoStroke.classList.add("solid");
-          logo.forEach((el) => el.classList.add("solid"));
-
-          text.forEach((el) => el.classList.add("solid"));
+          text.forEach((el) => el.classList.add("dark"));
+          logoStroke.classList.add("dark");
+          logo.forEach((el) => el.classList.add("dark"));
         } else {
-          navbar.classList.remove("navbar-light");
-          navbar.classList.add("navbar-dark");
-
           navbar.classList.add("bg-transparent");
           navbar.classList.remove("bg-light");
-
+          text.forEach((el) => el.classList.remove("dark"));
           logoStroke.classList.remove("dark");
           logo.forEach((el) => el.classList.remove("dark"));
-
-          text.forEach((el) => el.classList.remove("dark"));
         }
       });
     </script>

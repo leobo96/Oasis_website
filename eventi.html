@@ -214,31 +214,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script>
-      let navbar = document.querySelector("header");
-      let text = document.querySelectorAll(
-        ".navbar-dark .navbar-nav .nav-link"
-      );
-      let logoStroke = document.querySelector(".logo-stroke");
-      let logo = document.querySelectorAll(".logo");
-
-      window.addEventListener("scroll", (e) => {
-        e.preventDefault();
-
-        if (window.scrollY >= 100) {
-          navbar.classList.remove("bg-transparent");
-          navbar.classList.add("bg-light");
-          text.forEach((el) => el.classList.add("dark"));
-          logoStroke.classList.add("dark");
-          logo.forEach((el) => el.classList.add("dark"));
-        } else {
-          navbar.classList.add("bg-transparent");
-          navbar.classList.remove("bg-light");
-          text.forEach((el) => el.classList.remove("dark"));
-          logoStroke.classList.remove("dark");
-          logo.forEach((el) => el.classList.remove("dark"));
-        }
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

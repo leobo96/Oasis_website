@@ -44,6 +44,9 @@ h3 {
 .bg-secondary {
   background-color: var(--secondary) !important;
 }
+.bg-secondary-variant1 {
+  background-color: var(--secondary-variant1) !important;
+}
 .bg-dark {
   background-color: var(--dark) !important;
 }
@@ -84,6 +87,17 @@ h3 {
 .btn-primary:focus {
   background-color: var(--primary-variant1);
   border-color: var(--primary-variant1);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--secondary-variant1);
+  border-color: var(--secondary-variant1);
 }
 
 /* logo  */
@@ -175,3 +189,28 @@ h3 {
 #hero-unisciti {
   --hero-bg: url("img/3.jpg");
 }
+
+/* @media (min-width: 992px) {
+  .composition-servizi {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .composition1 {
+    grid-column: span 3;
+    grid-row: 1fr;
+  }
+
+  .composition2 {
+    grid-column: span 3;
+    grid-row: 1fr;
+  }
+
+  .composition3 {
+    grid-column: span 2;
+    grid-row: ;
+  }
+
+  .composition4 {
+  }
+} */

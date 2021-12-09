@@ -185,3 +185,7 @@ section:not(.hero)::before {
   margin-left: -25px;
   z-index: 200;
 }
+
+#passaggi li {
+  list-style: url(img/Separatore15.png);
+}

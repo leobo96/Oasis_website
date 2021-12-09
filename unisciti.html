@@ -145,9 +145,112 @@
         id="hero-home"
       >
         <div class="hero-content text-light text-center">
-          <h1 class="display-1">Oasis</h1>
-          <h2 class="lead">La culla del tuo futuro</h2>
-          <button class="btn btn-primary mt-3">Unisciti a noi</button>
+          <h1 class="visually-hidden">Unisciti a noi</h1>
+          <h2 class="h1">Oasis è perfetta per te?</h2>
+          <h3 class="lead">
+            Scopri gli step necessari per diventare un cittadino
+          </h3>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Gli step da seguire</h2>
+          <p>
+            Compila il form qui in basso e inviarci la tua candidatura. <br />
+            Ricorda: la nostra parola d’ordine è <strong>accoglienza</strong>,
+            ma abbiamo bisogno che tu corrisponda almeno in parte al nostro
+            cittadino ideale. OASIS deve crescere e può farlo solo grazie alle
+            <strong>persone giuste</strong>.
+          </p>
+        </div>
+        <div class="container-lg">
+          <div class="row py-lg-5 align-items-center justify-content-between">
+            <!-- passaggi -->
+            <div class="col-lg-6 py-3 py-lg-0">
+              <div class="container">
+                <ul id="passaggi">
+                  <li>
+                    <h3>Candidati</h3>
+                    <p>
+                      Compila il form in questa pagina. Nel messaggio specifica
+                      perché sei interessato ad entrare in OASIS
+                    </p>
+                  </li>
+                  <li>
+                    <h3>Conosciamoci</h3>
+                    <p>
+                      Ti contatteremo per un breve colloquio online. Ti faremo
+                      delle domande sulle tue aspirazioni e su come pensi di
+                      contribuire a far crescere OASIS
+                    </p>
+                  </li>
+                  <li>
+                    <h3>Raggiungici</h3>
+                    <p>
+                      Se sarai idoneo, riceverai le coordinate geografiche
+                      precise per raggiungerci. All’arrivo dovrai esibire il
+                      codice di accettazione.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>Vivi</h3>
+                    <p>
+                      Goditi i servizi e vivi la vita dei quartieri partecipando
+                      agli eventi
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- form -->
+            <div
+              class="
+                col-lg-5
+                d-flex
+                flex-column
+                align-items-center
+                py-4
+                bg-secondary
+                text-light
+              "
+            >
+              <h3 class="mb-4">Invia un messaggio</h3>
+              <form class="w-75">
+                <div class="mb-3">
+                  <label class="form-label" for="email">Email:</label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Inserisci la tua mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="oggetto">Oggetto:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="oggetto"
+                    placeholder="Inserisci l'oggetto della mail"
+                  />
+                </div>
+                <div class="mb-5">
+                  <label class="form-label" for="messaggio">Messaggio:</label>
+                  <textarea
+                    class="form-control"
+                    type="text"
+                    rows="3"
+                    id="messaggio"
+                    placeholder="Inserisci il tuo messaggio"
+                  ></textarea>
+                </div>
+                <div class="mb-5 mb-md-3 d-flex justify-content-center">
+                  <input class="btn btn-primary" type="submit" />
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>

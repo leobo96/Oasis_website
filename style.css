@@ -36,13 +36,26 @@ h3 {
     font-size: calc(1.625rem + 10vw);
   }
 }
-
+/* Overwriting container max-width */
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1100px;
+  }
+}
 /* overwriting background colors */
 .bg-primary {
   background-color: var(--primary) !important;
 }
 .bg-secondary {
   background-color: var(--secondary) !important;
+}
+.bg-secondary-variant1 {
+  background-color: var(--secondary-variant1) !important;
 }
 .bg-dark {
   background-color: var(--dark) !important;
@@ -84,6 +97,17 @@ h3 {
 .btn-primary:focus {
   background-color: var(--primary-variant1);
   border-color: var(--primary-variant1);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--secondary-variant1);
+  border-color: var(--secondary-variant1);
 }
 
 /* logo  */

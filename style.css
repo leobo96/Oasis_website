@@ -200,7 +200,7 @@ h3 {
   --hero-bg: url("img/3.jpg");
 }
 
-footer::before,
+/* footer::before,
 section:not(.hero)::before {
   content: url(img/separatore50.png);
   position: relative;
@@ -208,7 +208,7 @@ section:not(.hero)::before {
   left: 50%;
   margin-left: -25px;
   z-index: 200;
-}
+} */
 
 #passaggi li {
   list-style: url(img/Separatore15.png);

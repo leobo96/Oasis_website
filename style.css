@@ -36,7 +36,17 @@ h3 {
     font-size: calc(1.625rem + 10vw);
   }
 }
-
+/* Overwriting container max-width */
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1100px;
+  }
+}
 /* overwriting background colors */
 .bg-primary {
   background-color: var(--primary) !important;
@@ -214,3 +224,10 @@ h3 {
   .composition4 {
   }
 } */
+
+.composition-servizi::-webkit-scrollbar {
+  width: 0rem;
+}
+.composition-servizi {
+  scrollbar-width: none;
+}

@@ -31,6 +31,10 @@ h2 {
 h3 {
   letter-spacing: -0.01rem;
 }
+.small-caps {
+  font-variant: small-caps;
+}
+
 @media (min-width: 992px) {
   .display-1 {
     font-size: calc(1.625rem + 10vw);

@@ -21,14 +21,20 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+.h1,
+.h2,
+.h3 {
   font-family: "Comfortaa", cursive;
 }
 h1,
-h2 {
+h2,
+.h1,
+.h2 {
   letter-spacing: -0.02rem;
 }
-h3 {
+h3,
+.h3 {
   letter-spacing: -0.01rem;
 }
 .small-caps {
@@ -202,6 +208,10 @@ h3 {
 }
 #hero-unisciti {
   --hero-bg: url("img/3.jpg");
+}
+
+.hero-content {
+  max-width: 920px;
 }
 
 /* footer::before,

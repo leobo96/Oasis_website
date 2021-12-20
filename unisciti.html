@@ -14,8 +14,9 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Oasis | Homepage</title>
+    <title>Oasis | Unisciti</title>
   </head>
+
   <body>
     <header
       class="
@@ -114,7 +115,9 @@
                   <li>
                     <a href="servizi.html" class="dropdown-item">Generale</a>
                   </li>
-                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
                   <li>
                     <a href="istruzione.html" class="dropdown-item"
                       >Istruzione</a
@@ -141,83 +144,93 @@
 
     <main>
       <section
-        class="hero d-flex justify-content-center align-items-center"
+        class="hero d-flex align-items-center justify-content-start"
         id="hero-home"
       >
-        <div class="hero-content text-light text-center">
+        <div class="hero-content bg-dark p-4 ps-5 text-light w-75">
           <h1 class="visually-hidden">Unisciti a noi</h1>
-          <h2 class="h1">Oasis è perfetta per te?</h2>
+          <h2 class="h1">Ti senti cittadino di Oasis?</h2>
           <h3 class="lead">
-            Scopri gli step necessari per diventare un cittadino
+            Scopri gli step necessari per entrare a far parte dell'èlite del
+            Nuovo Mondo
           </h3>
         </div>
       </section>
 
-      <section>
+      <section class="py-5">
         <div class="container">
-          <h2>Gli step da seguire</h2>
-          <p>
-            Compila il form qui in basso e inviarci la tua candidatura. <br />
-            Ricorda: la nostra parola d’ordine è <strong>accoglienza</strong>,
-            ma abbiamo bisogno che tu corrisponda almeno in parte al nostro
-            cittadino ideale. OASIS deve crescere e può farlo solo grazie alle
-            <strong>persone giuste</strong>.
-          </p>
-        </div>
-        <div class="container-lg">
-          <div class="row py-lg-5 align-items-center justify-content-between">
-            <!-- passaggi -->
-            <div class="col-lg-6 py-3 py-lg-0">
-              <div class="container">
-                <ul id="passaggi">
-                  <li>
-                    <h3>Candidati</h3>
-                    <p>
-                      Compila il form in questa pagina. Nel messaggio specifica
-                      perché sei interessato ad entrare in OASIS
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Conosciamoci</h3>
-                    <p>
-                      Ti contatteremo per un breve colloquio online. Ti faremo
-                      delle domande sulle tue aspirazioni e su come pensi di
-                      contribuire a far crescere OASIS
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Raggiungici</h3>
-                    <p>
-                      Se sarai idoneo, riceverai le coordinate geografiche
-                      precise per raggiungerci. All’arrivo dovrai esibire il
-                      codice di accettazione.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Vivi</h3>
-                    <p>
-                      Goditi i servizi e vivi la vita dei quartieri partecipando
-                      agli eventi
-                    </p>
-                  </li>
-                </ul>
-              </div>
+          <div
+            class="
+              row
+              gy-5 gy-md-0
+              gx-md-5
+              align-items-center
+              justify-content-between
+            "
+          >
+            <div class="col-md col-lg-5 text-center">
+              <img class="img-fluid" src="img/Image350.png" alt="" />
             </div>
+            <!-- passaggi -->
+            <div class="col-md col-lg-5">
+              <ul id="passaggi">
+                <li>
+                  <h3 class="lead">Candidati</h3>
+                  <p>
+                    Compila il form in questa pagina. Nel messaggio specifica
+                    perché sei interessato ad entrare in OASIS
+                  </p>
+                </li>
+                <li>
+                  <h3 class="lead">Conosciamoci</h3>
+                  <p>
+                    Ti contatteremo per un breve colloquio online. Ti faremo
+                    delle domande sulle tue aspirazioni e su come pensi di
+                    contribuire a far crescere OASIS
+                  </p>
+                </li>
+                <li>
+                  <h3 class="lead">Raggiungici</h3>
+                  <p>
+                    Se sarai idoneo, riceverai le coordinate geografiche precise
+                    per raggiungerci. All’arrivo dovrai esibire il codice di
+                    accettazione.
+                  </p>
+                </li>
+                <li>
+                  <h3 class="lead">Vivi</h3>
+                  <p>
+                    Goditi i servizi e vivi la vita dei quartieri partecipando
+                    agli eventi
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- form -->
-            <div
-              class="
-                col-lg-5
-                d-flex
-                flex-column
-                align-items-center
-                py-4
-                bg-secondary
-                text-light
-              "
-            >
-              <h3 class="mb-4">Invia un messaggio</h3>
-              <form class="w-75">
+      <section class="bg-primary py-5">
+        <div class="container">
+          <div
+            class="
+              row
+              gy-5 gy-md-0
+              gx-md-5
+              align-items-center
+              justify-content-between
+            "
+          >
+            <div class="col-md col-lg-5">
+              <h2>Compila il form</h2>
+              <p>
+                Ricorda: la nostra parola d’ordine è accoglienza, ma abbiamo
+                bisogno che tu soddisfi i requisiti del nostro cittadino ideale.
+                OASIS deve crescere e può farlo solo grazie alle persone giuste.
+              </p>
+            </div>
+            <div class="col-md col-lg-5">
+              <form class="p-4 bg-light">
                 <div class="mb-3">
                   <label class="form-label" for="email">Email:</label>
                   <input
@@ -235,7 +248,7 @@
                     placeholder="Inserisci l'oggetto della mail"
                   />
                 </div>
-                <div class="mb-5">
+                <div class="mb-3">
                   <label class="form-label" for="messaggio">Messaggio:</label>
                   <textarea
                     class="form-control"
@@ -245,8 +258,11 @@
                     placeholder="Inserisci il tuo messaggio"
                   ></textarea>
                 </div>
-                <div class="mb-5 mb-md-3 d-flex justify-content-center">
-                  <input class="btn btn-primary" type="submit" />
+                <div class="d-flex flex-column">
+                  <input
+                    class="btn btn-primary align-self-stretch"
+                    type="submit"
+                  />
                 </div>
               </form>
             </div>

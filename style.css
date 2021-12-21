@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
 :root {
-  --hero-bg: url("");
+  --hero-bg: url(".");
   --primary: #bd6400;
   --primary-variant1: #ff9236;
   --primary-variant2: #ffc28f;
@@ -191,7 +191,7 @@ h3,
 #hero-descrizione {
   --hero-bg: url("img/3.jpg");
 }
-#hero-quartieri {
+#hero-storia {
   --hero-bg: url("img/3.jpg");
 }
 #hero-servizi {
@@ -226,4 +226,24 @@ section:not(.hero)::before {
 
 #passaggi li {
   list-style: url(img/Separatore15.png);
+}
+
+.story-year {
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .story-year {
+    font-size: 2rem;
+    text-align: center !important;
+  }
+  .year-container::after {
+    content: " ";
+    margin-top: 1rem;
+    display: block;
+    min-height: 75%;
+    width: 50%;
+    border-width: 0 3px 0 0;
+    border-color: var(--dark);
+    border-style: dashed;
+  }
 }

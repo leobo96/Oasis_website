@@ -75,6 +75,9 @@ a {
 .bg-light {
   background-color: var(--light) !important;
 }
+.bg-light-gray {
+  background-color: var(--light-gray) !important;
+}
 
 /* overwriting border colors */
 .border-primary {

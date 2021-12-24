@@ -3,22 +3,19 @@
 
 :root {
   --hero-bg: url(".");
-  --primary: #ff97e8;
-  --primaryWAlpha: rgba(255, 151, 232, 0.4);
-  --primary-variant1: #ff9236;
-  --primary-variant2: #ffc28f;
-  --primary-variant3: #fff3e9;
+  --primary: #f2c7d9;
   --secondary: #095b76;
   --secondary-variant1: #0d85ad;
-  --secondary-variant2: #3fc5f0;
-  --secondary-variant3: #f3faf9;
+  --tertiary: rgba(255, 151, 232, 0.6);
   --dark: #031c25;
-  --gray: #495c63;
+  --dark-gray: #495c63;
+  --light-gray: #b1b7b9;
   --light: #fafdff;
 }
 /* typography */
 body {
   font-family: "Montserrat", sans-serif;
+  color: var(--dark-gray);
 }
 h1,
 h2,
@@ -41,12 +38,15 @@ h3,
 .small-caps {
   font-variant: small-caps;
 }
-
 @media (min-width: 992px) {
   .display-1 {
     font-size: calc(1.625rem + 10vw);
   }
 }
+a {
+  text-decoration: none;
+}
+
 /* Overwriting container max-width */
 @media (min-width: 1400px) {
   .container,
@@ -58,12 +58,16 @@ h3,
     max-width: 1100px;
   }
 }
+
 /* overwriting background colors */
 .bg-primary {
   background-color: var(--primary) !important;
 }
 .bg-secondary {
   background-color: var(--secondary) !important;
+}
+.bg-tertiary {
+  background-color: var(--tertiary) !important;
 }
 .bg-secondary-variant1 {
   background-color: var(--secondary-variant1) !important;
@@ -100,23 +104,11 @@ h3,
 
 /* Overwriting buttons */
 .btn-primary {
-  background-color: var(--primary);
-  border-color: var(--primary);
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: var(--primary-variant1);
-  border-color: var(--primary-variant1);
-}
-
-.btn-secondary {
   background-color: var(--secondary);
   border-color: var(--secondary);
 }
-
-.btn-secondary:hover,
-.btn-secondary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: var(--secondary-variant1);
   border-color: var(--secondary-variant1);
 }
@@ -135,13 +127,13 @@ h3,
   stroke: var(--dark);
 }
 
+/* NAVBAR */
 /* Overwriting navbar background color when on lg screen */
 @media (min-width: 992px) {
   .navbar-expand-lg .offcanvas {
     background-color: transparent !important;
   }
 }
-
 /* Overwriting navbar nav-link style */
 .navbar-dark .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link {
@@ -168,16 +160,17 @@ h3,
 .navbar-light .navbar-nav .nav-link:hover {
   color: var(--primary);
 }
-
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.active {
   color: var(--primary-variant1);
 }
+
 /* Overwriting dropdown */
 .dropdown-item.active {
   color: var(--primary-variant1);
   background-color: white;
 }
+
 /* Hero images */
 .hero {
   min-height: 100vh;
@@ -213,20 +206,18 @@ h3,
   --hero-bg: url("img/3.jpg");
 }
 
+/* Hero content */
 .hero-content {
   max-width: 920px;
 }
-
 #hero-home .hero-content {
-  max-width: none;
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
-  background-color: var(--primaryWAlpha);
+  background-color: var(--terti);
   z-index: 2;
 }
-
 @media (min-width: 768px) {
   #hero-home .hero-content {
     width: 50%;
@@ -234,6 +225,7 @@ h3,
   }
 }
 
+/* Composition servizi home */
 .composition-servizi img {
   width: 60%;
 }
@@ -242,20 +234,7 @@ h3,
   z-index: 2;
 }
 
-/* footer::before,
-section:not(.hero)::before {
-  content: url(img/separatore50.png);
-  position: relative;
-  top: -26.5px;
-  left: 50%;
-  margin-left: -25px;
-  z-index: 200;
-} */
-
-#passaggi li {
-  list-style: url(img/Separatore15.png);
-}
-
+/* story year  */
 .story-year {
   font-size: 1.25rem;
 }
@@ -275,3 +254,17 @@ section:not(.hero)::before {
     border-style: dashed;
   }
 }
+
+/* footer::before,
+section:not(.hero)::before {
+  content: url(img/separatore50.png);
+  position: relative;
+  top: -26.5px;
+  left: 50%;
+  margin-left: -25px;
+  z-index: 200;
+} */
+
+/* #passaggi li {
+  list-style: url(img/Separatore15.png);
+} */

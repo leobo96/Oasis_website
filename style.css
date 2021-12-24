@@ -4,6 +4,7 @@
 :root {
   --hero-bg: url(".");
   --primary: #bd6400;
+  --primaryWAlpha: rgba(189, 100, 0, 0.4);
   --primary-variant1: #ff9236;
   --primary-variant2: #ffc28f;
   --primary-variant3: #fff3e9;
@@ -186,7 +187,9 @@ h3,
   background-size: cover;
 }
 #hero-home {
-  --hero-bg: url("img/3.jpg");
+  --hero-bg: url("img/HeaderHome.jpg");
+  background-size: cover;
+  position: relative;
 }
 #hero-descrizione {
   --hero-bg: url("img/3.jpg");
@@ -212,6 +215,23 @@ h3,
 
 .hero-content {
   max-width: 920px;
+}
+
+#hero-home .hero-content {
+  max-width: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primaryWAlpha);
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  #hero-home .hero-content {
+    width: 50%;
+    right: 0;
+  }
 }
 
 /* footer::before,

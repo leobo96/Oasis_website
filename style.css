@@ -122,16 +122,16 @@ a {
 }
 
 /* logo  */
-.logo {
+.logo path:not(#smile) {
   fill: var(--light);
 }
-.logo-stroke {
+.logo #smile {
   stroke: var(--light);
 }
-.logo.solid {
+.logo path:not(#smile).solid {
   fill: var(--dark);
 }
-.logo-stroke.solid {
+.logo #smile.solid {
   stroke: var(--dark);
 }
 

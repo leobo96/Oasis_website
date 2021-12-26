@@ -223,7 +223,7 @@ a {
   top: 0;
   bottom: 0;
   width: 100%;
-  background-color: var(--tertiary);
+  /*background-color: var(--tertiary);*/
   z-index: 2;
 }
 @media (min-width: 768px) {

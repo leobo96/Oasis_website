@@ -7,6 +7,7 @@
   --secondary: #095b76;
   --secondary-variant1: #0d85ad;
   --tertiary: rgba(255, 151, 232, 0.6);
+  --primaryAlpha: rgba(242, 199, 217, 0.6);
   --dark: #031c25;
   --dark-gray: #495c63;
   --light-gray: #b1b7b9;
@@ -77,6 +78,9 @@ a {
 }
 .bg-light-gray {
   background-color: var(--light-gray) !important;
+}
+.bg-primary-alpha {
+  background-color: var(--primaryAlpha);
 }
 
 /* overwriting border colors */
@@ -204,7 +208,7 @@ a {
   --hero-bg: url("img/HeaderBenessere.jpg");
 }
 #hero-eventi {
-  --hero-bg: url("img/3.jpg");
+  --hero-bg: url("img/HeroEventi.jpg");
 }
 #hero-unisciti {
   --hero-bg: url("img/3.jpg");

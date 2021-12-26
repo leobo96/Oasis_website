@@ -193,10 +193,10 @@ a {
   position: relative;
 }
 #hero-descrizione {
-  --hero-bg: url("img/3.jpg");
+  --hero-bg: url("img/Header_Descrizione.jpg");
 }
 #hero-storia {
-  --hero-bg: url("img/3.jpg");
+  --hero-bg: url("img/Header_Storia.jpg");
 }
 #hero-servizi {
   --hero-bg: url("img/Header_Servizi.jpg");
@@ -208,10 +208,10 @@ a {
   --hero-bg: url("img/HeaderBenessere.jpg");
 }
 #hero-eventi {
-  --hero-bg: url("img/HeroEventi.jpg");
+  --hero-bg: url("img/Header_Eventi.jpg");
 }
 #hero-unisciti {
-  --hero-bg: url("img/3.jpg");
+  --hero-bg: url("img/Header_Unisciti.jpg");
 }
 
 /* Hero content */

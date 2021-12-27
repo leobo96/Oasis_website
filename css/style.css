@@ -189,10 +189,19 @@ a {
   background-size: cover;
 }
 #hero-home {
-  --hero-bg: url("../img/HeaderHome.jpg");
+  --hero-bg: url("../img/HeaderHomeMobile.jpg");
   background-size: cover;
   position: relative;
 }
+
+@media (min-width: 768px) {
+  #hero-home {
+    --hero-bg: url("../img/HeaderHomeDesktop.jpg");
+    background-size: cover;
+    position: relative;
+  }
+}
+
 #hero-descrizione {
   --hero-bg: url("../img/Header_Descrizione.jpg");
 }

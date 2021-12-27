@@ -8,6 +8,7 @@
   --secondary-variant1: #0d85ad;
   --tertiary: rgba(255, 151, 232, 0.6);
   --primaryAlpha: rgba(242, 199, 217, 0.6);
+  --primaryDarker: hsl(335, 62%, 70%);
   --dark: #031c25;
   --dark-gray: #495c63;
   --light-gray: #b1b7b9;
@@ -175,7 +176,7 @@ a {
 
 /* Overwriting dropdown */
 .dropdown-item.active {
-  color: var(--primary);
+  color: var(--primaryDarker);
   background-color: white;
 }
 

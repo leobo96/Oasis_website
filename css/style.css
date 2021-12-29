@@ -203,16 +203,44 @@ a {
 }
 
 #hero-descrizione {
-  --hero-bg: url("../img/Header_Descrizione.jpg");
+  --hero-bg: url("../img/Header_DescrizioneMobile.jpg");
 }
+
+@media (min-width: 768px) {
+  #hero-descrizione {
+    --hero-bg: url("../img/Header_Descrizione.jpg");
+    background-size: cover;
+    position: relative;
+  }
+}
+
 #hero-storia {
-  --hero-bg: url("../img/Header_Storia.jpg");
+  --hero-bg: url("../img/Header_StoriaMobile.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  #hero-storia {
+    --hero-bg: url("../img/Header_Storia.jpg");
+    background-size: cover;
+    position: relative;
+  }
 }
 #hero-servizi {
-  --hero-bg: url("../img/Header_Servizi.jpg");
+  --hero-bg: url("../img/Header_ServiziMobile.jpg");
 }
+
+@media (min-width: 768px) {
+  #hero-servizi {
+    --hero-bg: url("../img/Header_Servizi2.jpg");
+    background-size: cover;
+    position: relative;
+  }
+}
+
 #hero-formazione {
-  --hero-bg: url("../img/Header_Formazione.jpg");
+  --hero-bg: url("../img/HeaderFormazione.jpg");
 }
 #hero-benessere {
   --hero-bg: url("../img/HeaderBenessere.jpg");
@@ -221,7 +249,15 @@ a {
   --hero-bg: url("../img/Header_Eventi.jpg");
 }
 #hero-unisciti {
-  --hero-bg: url("../img/Header_Unisciti.jpg");
+  --hero-bg: url("../img/Header_UniscitiMobile.jpg");
+}
+
+@media (min-width: 768px) {
+  #hero-unisciti {
+    --hero-bg: url("../img/Header_Unisciti.jpg");
+    background-size: cover;
+    position: relative;
+  }
 }
 
 /* Hero content */

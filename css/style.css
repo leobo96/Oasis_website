@@ -122,20 +122,6 @@ a {
   border-color: var(--secondary-variant1);
 }
 
-/* logo  */
-.logo path:not(#smile) {
-  fill: var(--light);
-}
-.logo #smile {
-  stroke: var(--light);
-}
-.logo path:not(#smile).solid {
-  fill: var(--dark);
-}
-.logo #smile.solid {
-  stroke: var(--dark);
-}
-
 /* NAVBAR */
 /* Overwriting navbar background color when on lg screen */
 @media (min-width: 992px) {
@@ -143,6 +129,7 @@ a {
     background-color: transparent !important;
   }
 }
+
 /* Overwriting navbar nav-link style */
 .navbar-dark .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link {
@@ -151,24 +138,29 @@ a {
   text-transform: uppercase;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 /* Overwriting nav-link colors */
+/* NORMAL */
 .nav-link,
 .nav-link:visited,
 .navbar-dark .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link {
   color: var(--light);
 }
+/* SCROLL */
 @media (min-width: 992px) {
   .navbar-light .navbar-nav .nav-link.solid {
     color: var(--dark);
     filter: none;
   }
 }
+/* HOVER */
 .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:hover {
   color: var(--primary);
 }
+/* ACTIVE */
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.active {
   color: var(--tertiary);
@@ -190,55 +182,17 @@ a {
 }
 #hero-home {
   --hero-bg: url("../img/HeaderHomeMobile.jpg");
-  background-size: cover;
   position: relative;
 }
-
-@media (min-width: 768px) {
-  #hero-home {
-    --hero-bg: url("../img/HeaderHomeDesktop.jpg");
-    background-size: cover;
-    position: relative;
-  }
-}
-
 #hero-descrizione {
   --hero-bg: url("../img/Header_DescrizioneMobile.jpg");
 }
-
-@media (min-width: 768px) {
-  #hero-descrizione {
-    --hero-bg: url("../img/Header_Descrizione.jpg");
-    background-size: cover;
-    position: relative;
-  }
-}
-
 #hero-storia {
   --hero-bg: url("../img/Header_StoriaMobile.jpg");
-  background-size: cover;
-  position: relative;
-}
-
-@media (min-width: 768px) {
-  #hero-storia {
-    --hero-bg: url("../img/Header_Storia.jpg");
-    background-size: cover;
-    position: relative;
-  }
 }
 #hero-servizi {
   --hero-bg: url("../img/Header_ServiziMobile.jpg");
 }
-
-@media (min-width: 768px) {
-  #hero-servizi {
-    --hero-bg: url("../img/Header_Servizi2.jpg");
-    background-size: cover;
-    position: relative;
-  }
-}
-
 #hero-formazione {
   --hero-bg: url("../img/HeaderFormazione.jpg");
 }
@@ -251,12 +205,21 @@ a {
 #hero-unisciti {
   --hero-bg: url("../img/Header_UniscitiMobile.jpg");
 }
-
 @media (min-width: 768px) {
+  #hero-home {
+    --hero-bg: url("../img/HeaderHomeDesktop.jpg");
+  }
+  #hero-descrizione {
+    --hero-bg: url("../img/Header_Descrizione.jpg");
+  }
+  #hero-storia {
+    --hero-bg: url("../img/Header_Storia.jpg");
+  }
+  #hero-servizi {
+    --hero-bg: url("../img/Header_Servizi2.jpg");
+  }
   #hero-unisciti {
     --hero-bg: url("../img/Header_Unisciti.jpg");
-    background-size: cover;
-    position: relative;
   }
 }
 
@@ -269,7 +232,6 @@ a {
   top: 0;
   bottom: 0;
   width: 100%;
-  /*background-color: var(--tertiary);*/
   z-index: 2;
 }
 @media (min-width: 768px) {
@@ -308,17 +270,3 @@ a {
     border-style: dashed;
   }
 }
-
-/* footer::before,
-section:not(.hero)::before {
-  content: url(img/separatore50.png);
-  position: relative;
-  top: -26.5px;
-  left: 50%;
-  margin-left: -25px;
-  z-index: 200;
-} */
-
-/* #passaggi li {
-  list-style: url(img/Separatore15.png);
-} */

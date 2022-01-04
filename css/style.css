@@ -181,54 +181,54 @@ a {
   background-size: cover;
 }
 #hero-home {
-  --hero-bg: url("../img/HeaderHomeMobile.jpg");
+  --hero-bg: url("../img/Hero_Home_Mobile.jpg");
   position: relative;
 }
 #hero-descrizione {
-  --hero-bg: url("../img/Header_DescrizioneMobile.jpg");
+  --hero-bg: url("../img/Hero_Descrizione_Mobile.jpg");
 }
 #hero-storia {
-  --hero-bg: url("../img/Header_StoriaMobile.jpg");
+  --hero-bg: url("../img/Hero_Storia_Mobile.jpg");
 }
 #hero-servizi {
-  --hero-bg: url("../img/Header_ServiziMobile.jpg");
+  --hero-bg: url("../img/Hero_Servizi_Mobile.jpg");
 }
 #hero-formazione {
-  --hero-bg: url("../img/HeaderFormazione.jpg");
+  --hero-bg: url("../img/Hero_Formazione_Mobile.jpg");
 }
 #hero-benessere {
-  --hero-bg: url("../img/HeaderBenessere.jpg");
+  --hero-bg: url("../img/Hero_Benessere_Mobile.jpg");
 }
 #hero-eventi {
-  --hero-bg: url("../img/Header_Eventi.jpg");
+  --hero-bg: url("../img/Hero_Eventi_Mobile.jpg");
 }
 #hero-unisciti {
-  --hero-bg: url("../img/Header_UniscitiMobile.jpg");
+  --hero-bg: url("../img/Hero_Unisciti_Mobile.jpg");
 }
 @media (min-width: 768px) {
   #hero-home {
-    --hero-bg: url("../img/HeaderHomeDesktop.jpg");
+    --hero-bg: url("../img/Hero_Home_Desktop.jpg");
   }
   #hero-descrizione {
-    --hero-bg: url("../img/Header_Descrizione.jpg");
+    --hero-bg: url("../img/Hero_Descrizione_Desktop.jpg");
   }
   #hero-storia {
-    --hero-bg: url("../img/Header_Storia.jpg");
+    --hero-bg: url("../img/Hero_Storia_Desktop.jpg");
   }
   #hero-servizi {
-    --hero-bg: url("../img/Header_Servizi2.jpg");
+    --hero-bg: url("../img/Hero_Servizi_Desktop.jpg");
   }
   #hero-benessere {
-    --hero-bg: url("../img/HeaderBenessere.jpg");
+    --hero-bg: url("../img/Hero_Benessere_Desktop.jpg");
   }
   #hero-formazione {
-    --hero-bg: url("../img/HeaderFormazione.jpg");
+    --hero-bg: url("../img/Hero_Formazione_Desktop.jpg");
   }
   #hero-eventi {
-    --hero-bg: url("../img/Header_Eventi.jpg");
+    --hero-bg: url("../img/Hero_Eventi_Desktop.jpg");
   }
   #hero-unisciti {
-    --hero-bg: url("../img/Header_Unisciti.jpg");
+    --hero-bg: url("../img/Hero_Unisciti_Desktop.jpg");
   }
 }
 

@@ -251,10 +251,10 @@ a {
 }
 
 /* Composition servizi home */
-.composition-servizi img {
+.composition img {
   width: 60%;
 }
-.composition-servizi img:last-child {
+.composition img:last-child {
   margin-top: -10%;
   z-index: 2;
 }

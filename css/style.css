@@ -218,6 +218,15 @@ a {
   #hero-servizi {
     --hero-bg: url("../img/Header_Servizi2.jpg");
   }
+  #hero-benessere {
+    --hero-bg: url("../img/HeaderBenessere.jpg");
+  }
+  #hero-formazione {
+    --hero-bg: url("../img/HeaderFormazione.jpg");
+  }
+  #hero-eventi {
+    --hero-bg: url("../img/Header_Eventi.jpg");
+  }
   #hero-unisciti {
     --hero-bg: url("../img/Header_Unisciti.jpg");
   }

@@ -11,7 +11,7 @@
   --primaryDarker: hsl(335, 62%, 70%);
   --dark: #031c25;
   --dark-gray: #495c63;
-  --light-gray: #b1b7b9;
+  --light-gray: #d1e4e2;
   --light: #fafdff;
 }
 /* typography */
@@ -176,7 +176,7 @@ a {
 .hero {
   min-height: 100vh;
   max-height: 810px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0%), rgba(0, 0, 0, 0%)),
     var(--hero-bg) no-repeat center center scroll;
   background-size: cover;
 }
@@ -278,4 +278,31 @@ a {
     border-color: var(--dark);
     border-style: dashed;
   }
+}
+
+@media (min-width: 1024px) {
+  .hand-to-right::after {
+    content: url("../img/Manodestra.jpg");
+    position: absolute;
+    right: 0;
+    margin-right: -141px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hand-to-left::before {
+    content: url("../img/Manosinistra.jpg");
+    position: absolute;
+    left: 0;
+    margin-left: -140px;
+  }
+}
+
+@media (min-width: 1130px) {
+.hand-faq::before{
+    content: url("../img/Manofaq.png");
+    position: absolute;
+    right: 0;
+    margin-left: -140px;
+    }
 }

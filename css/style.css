@@ -299,10 +299,10 @@ a {
 }
 
 @media (min-width: 1130px) {
-.hand-faq::before{
+  .hand-faq::before {
     content: url("../img/Manofaq.png");
     position: absolute;
     right: 0;
     margin-left: -140px;
-    }
+  }
 }
